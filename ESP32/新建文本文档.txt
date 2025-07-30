@@ -1,0 +1,10 @@
+ESP32 的環境修改
+del Env:\IDF_TARGET
+idf.py fullclean
+idf.py clean
+idf.py set-target esp32s3
+ESP32 无法搜索USB
+
+
+ESP32 C6 openOCD cfg文件
+board/esp32c6-builtin.cfg
