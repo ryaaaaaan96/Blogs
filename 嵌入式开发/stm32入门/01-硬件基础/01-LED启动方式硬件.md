@@ -10,7 +10,7 @@ LED的驱动方式，常见的有四种。
 **方式3**：使用引脚输出1.2V点亮LED，输出0V熄灭LED。
 
 **方式4**：使用引脚输出0V点亮LED，输出1.2V熄灭LED。
-![Pasted image 20230924093125](../pic/Pasted image 20230924093125.png)
+![Pasted image 20230924093125](../pic/Pasted%20image%2020230924093125.png)
 
 由此，主芯片引脚输出高电平/低电平，即可改变LED状态，而无需关注GPIO引脚输出的是3.3V还是1.2V。
 
@@ -70,21 +70,21 @@ set_reg, clr_reg, data_reg 三个寄存器对应的是同一个物理寄存器,s
 
 # 4 具体操作手册
 1. 打开原理图，搜“LED”，有2个用户LED
-![Pasted image 20230924161957](../pic/Pasted image 20230924161957.png)
+![Pasted image 20230924161957](../pic/Pasted%20image%2020230924161957.png)
 2. 芯片手册，先使能PLL4
-![Pasted image 20230924162015](../pic/Pasted image 20230924162015.png)
+![Pasted image 20230924162015](../pic/Pasted%20image%2020230924162015.png)
 3. 芯片手册，使能GPIOA
-![Pasted image 20230924162037](../pic/Pasted image 20230924162037.png)
-![Pasted image 20230924162042](../pic/Pasted image 20230924162042.png)
+![Pasted image 20230924162037](../pic/Pasted%20image%2020230924162037.png)
+![Pasted image 20230924162042](../pic/Pasted%20image%2020230924162042.png)
 4. 芯片手册，设置PA10，用作输出
-![Pasted image 20230924162105](../pic/Pasted image 20230924162105.png)
+![Pasted image 20230924162105](../pic/Pasted%20image%2020230924162105.png)
 5. 芯片手册，设置PA10的输出电平
 方法1：读寄存、修改值、写回去(低效)
 
 GPIOA_ODR地址： 0x50002000 + 0x14
-![Pasted image 20230924162128](../pic/Pasted image 20230924162128.png)
+![Pasted image 20230924162128](../pic/Pasted%20image%2020230924162128.png)
 
 方法2：直接写寄存器，一次操作即可，高效
 
 GPIOA_BSRR地址： 0x50002000 + 0x18
-![Pasted image 20230924162145](../pic/Pasted image 20230924162145.png)
+![Pasted image 20230924162145](../pic/Pasted%20image%2020230924162145.png)
