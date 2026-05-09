@@ -31,17 +31,17 @@ DCD
 ADR/LDR
 CMP
 后面再练习这些汇编指令
-![[Pasted image 20231001101313.png]]
+![Pasted image 20231001101313](../pic/Pasted image 20231001101313.png)
 Operation表示各类汇编指令，比如ADD、MOV；
 cond表示conditon，即该指令执行的条件；
 S表示该指令执行后，会去修改程序状态寄存器；
 Rd为目的寄存器，用来存储运算的结果；
 Rn、Operand2是两个源操作数
-![[Pasted image 20231001101427.png]]
+![Pasted image 20231001101427](../pic/Pasted image 20231001101427.png)
 
 
 *ARM和GCC语法差异*
-![[Pasted image 20231001101538.png]]
+![Pasted image 20231001101538](../pic/Pasted image 20231001101538.png)
 
 # 2. 汇编模拟器
 VisUAL

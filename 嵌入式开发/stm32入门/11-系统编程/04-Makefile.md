@@ -87,7 +87,7 @@ IDE指集成开发环境(Integrated Development Environment)。
 
 它是一款基于GCC的windows IDE，可以用来开发C/C++/Fortran。
 官网地址：`http://www.codeblocks.org/`
-![[003_download_codeblocks.png]]
+![003_download_codeblocks](../pic/003_download_codeblocks.png)
   
 在我们提供的GIT仓库里也有：`git clone https://e.coding.net/weidongshan/noos/cortexA7_windows_tools.git`
 
@@ -125,7 +125,7 @@ gcc -o hello hello.c
 
 ## 1. 程序编译4步骤
 
-  ![[001_4_steps 1.png]]
+  ![001_4_steps 1](../pic/001_4_steps 1.png)
   
 我们经常使用“编译”泛指上面的4个步骤之一，甚至有时候会囊括这四个步骤。
 ## 2. gcc的使用方法
@@ -195,7 +195,7 @@ gcc -o hello hello.o
 #### 2.2.2 使用后缀名决定编译过程
  
 参考`《嵌入式Linux应用开发完全手册》`：
-![[002_gcc_default_operation.png]]
+![002_gcc_default_operation](../pic/002_gcc_default_operation.png)
 * 总结
 * 输入文件的后缀名和选项共同决定gcc到底执行那些操作
 * 在编译过程中，最后的步骤都是链接
